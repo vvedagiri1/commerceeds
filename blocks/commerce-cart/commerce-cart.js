@@ -199,14 +199,7 @@ export default async function decorate(block) {
             },
           });
         },
-        ProductAttributes: (ctx) => {
-         // Prepend Product Attributes
-         const ProductAttributes = ctx.item?.categories;
-         const result = ProductAttributes.join(',');
-         const productAttribute = document.createElement('div');
-         productAttribute.innerText = `Categories: ${result}`;
-         ctx.appendChild(productAttribute);
-       },
+
 
         Footer: (ctx) => {
           // Edit Link
